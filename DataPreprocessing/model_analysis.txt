@@ -1,0 +1,544 @@
+Model Analysis Report
+Generated on: 2025-03-27 19:01:13
+Model file: sketch_face_700.h5
+================================================================================
+
+Standard loading failed: weight_decay is not a valid argument, kwargs should be empty  for `optimizer_experimental.Optimizer`.
+Attempting to fix model config and reload...
+Failed to load even after fix: 'str' object has no attribute 'decode'
+
+=== H5 FILE STRUCTURE ===
+
+model_weights:
+  backend: tensorflow
+  keras_version: 2.12.0
+  layer_names: ['input_1' 'sequential' 'sequential_1' 'sequential_2' 'sequential_3'
+ 'sequential_4' 'sequential_5' 'sequential_6' 'sequential_7'
+ 'sequential_8' 'sequential_9' 'sequential_10' 'sequential_11'
+ 'conv2d_transpose_6' 'conv2d_transpose_7']
+
+model_weights/conv2d_transpose_6:
+  weight_names: ['conv2d_transpose_6/kernel:0' 'conv2d_transpose_6/bias:0']
+
+model_weights/conv2d_transpose_6/conv2d_transpose_6:
+
+model_weights/conv2d_transpose_6/conv2d_transpose_6/bias:0:
+  Shape: (8,)
+  Dtype: float32
+
+model_weights/conv2d_transpose_6/conv2d_transpose_6/kernel:0:
+  Shape: (2, 2, 8, 16)
+  Dtype: float32
+
+model_weights/conv2d_transpose_7:
+  weight_names: ['conv2d_transpose_7/kernel:0' 'conv2d_transpose_7/bias:0']
+
+model_weights/conv2d_transpose_7/conv2d_transpose_7:
+
+model_weights/conv2d_transpose_7/conv2d_transpose_7/bias:0:
+  Shape: (3,)
+  Dtype: float32
+
+model_weights/conv2d_transpose_7/conv2d_transpose_7/kernel:0:
+  Shape: (2, 2, 3, 8)
+  Dtype: float32
+
+model_weights/input_1:
+  weight_names: []
+
+model_weights/sequential:
+  weight_names: ['conv2d/kernel:0']
+
+model_weights/sequential/conv2d:
+
+model_weights/sequential/conv2d/kernel:0:
+  Shape: (4, 4, 3, 16)
+  Dtype: float32
+
+model_weights/sequential_1:
+  weight_names: ['conv2d_1/kernel:0' 'batch_normalization/gamma:0'
+ 'batch_normalization/beta:0' 'batch_normalization/moving_mean:0'
+ 'batch_normalization/moving_variance:0']
+
+model_weights/sequential_1/batch_normalization:
+
+model_weights/sequential_1/batch_normalization/beta:0:
+  Shape: (32,)
+  Dtype: float32
+
+model_weights/sequential_1/batch_normalization/gamma:0:
+  Shape: (32,)
+  Dtype: float32
+
+model_weights/sequential_1/batch_normalization/moving_mean:0:
+  Shape: (32,)
+  Dtype: float32
+
+model_weights/sequential_1/batch_normalization/moving_variance:0:
+  Shape: (32,)
+  Dtype: float32
+
+model_weights/sequential_1/conv2d_1:
+
+model_weights/sequential_1/conv2d_1/kernel:0:
+  Shape: (4, 4, 16, 32)
+  Dtype: float32
+
+model_weights/sequential_10:
+  weight_names: ['conv2d_transpose_4/kernel:0']
+
+model_weights/sequential_10/conv2d_transpose_4:
+
+model_weights/sequential_10/conv2d_transpose_4/kernel:0:
+  Shape: (4, 4, 32, 64)
+  Dtype: float32
+
+model_weights/sequential_11:
+  weight_names: ['conv2d_transpose_5/kernel:0']
+
+model_weights/sequential_11/conv2d_transpose_5:
+
+model_weights/sequential_11/conv2d_transpose_5/kernel:0:
+  Shape: (4, 4, 16, 32)
+  Dtype: float32
+
+model_weights/sequential_2:
+  weight_names: ['conv2d_2/kernel:0']
+
+model_weights/sequential_2/conv2d_2:
+
+model_weights/sequential_2/conv2d_2/kernel:0:
+  Shape: (4, 4, 32, 64)
+  Dtype: float32
+
+model_weights/sequential_3:
+  weight_names: ['conv2d_3/kernel:0' 'batch_normalization_1/gamma:0'
+ 'batch_normalization_1/beta:0' 'batch_normalization_1/moving_mean:0'
+ 'batch_normalization_1/moving_variance:0']
+
+model_weights/sequential_3/batch_normalization_1:
+
+model_weights/sequential_3/batch_normalization_1/beta:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_3/batch_normalization_1/gamma:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_3/batch_normalization_1/moving_mean:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_3/batch_normalization_1/moving_variance:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_3/conv2d_3:
+
+model_weights/sequential_3/conv2d_3/kernel:0:
+  Shape: (4, 4, 64, 128)
+  Dtype: float32
+
+model_weights/sequential_4:
+  weight_names: ['conv2d_4/kernel:0' 'batch_normalization_2/gamma:0'
+ 'batch_normalization_2/beta:0' 'batch_normalization_2/moving_mean:0'
+ 'batch_normalization_2/moving_variance:0']
+
+model_weights/sequential_4/batch_normalization_2:
+
+model_weights/sequential_4/batch_normalization_2/beta:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_4/batch_normalization_2/gamma:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_4/batch_normalization_2/moving_mean:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_4/batch_normalization_2/moving_variance:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_4/conv2d_4:
+
+model_weights/sequential_4/conv2d_4/kernel:0:
+  Shape: (4, 4, 128, 256)
+  Dtype: float32
+
+model_weights/sequential_5:
+  weight_names: ['conv2d_5/kernel:0' 'batch_normalization_3/gamma:0'
+ 'batch_normalization_3/beta:0' 'batch_normalization_3/moving_mean:0'
+ 'batch_normalization_3/moving_variance:0']
+
+model_weights/sequential_5/batch_normalization_3:
+
+model_weights/sequential_5/batch_normalization_3/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_5/batch_normalization_3/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_5/batch_normalization_3/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_5/batch_normalization_3/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_5/conv2d_5:
+
+model_weights/sequential_5/conv2d_5/kernel:0:
+  Shape: (4, 4, 256, 512)
+  Dtype: float32
+
+model_weights/sequential_6:
+  weight_names: ['conv2d_transpose/kernel:0']
+
+model_weights/sequential_6/conv2d_transpose:
+
+model_weights/sequential_6/conv2d_transpose/kernel:0:
+  Shape: (4, 4, 512, 512)
+  Dtype: float32
+
+model_weights/sequential_7:
+  weight_names: ['conv2d_transpose_1/kernel:0']
+
+model_weights/sequential_7/conv2d_transpose_1:
+
+model_weights/sequential_7/conv2d_transpose_1/kernel:0:
+  Shape: (4, 4, 256, 512)
+  Dtype: float32
+
+model_weights/sequential_8:
+  weight_names: ['conv2d_transpose_2/kernel:0']
+
+model_weights/sequential_8/conv2d_transpose_2:
+
+model_weights/sequential_8/conv2d_transpose_2/kernel:0:
+  Shape: (4, 4, 128, 256)
+  Dtype: float32
+
+model_weights/sequential_9:
+  weight_names: ['conv2d_transpose_3/kernel:0']
+
+model_weights/sequential_9/conv2d_transpose_3:
+
+model_weights/sequential_9/conv2d_transpose_3/kernel:0:
+  Shape: (4, 4, 64, 128)
+  Dtype: float32
+
+model_weights/top_level_model_weights:
+  weight_names: []
+
+optimizer_weights:
+  weight_names: ['iteration:0' 'Adam/m/conv2d/kernel:0' 'Adam/v/conv2d/kernel:0'
+ 'Adam/m/conv2d_1/kernel:0' 'Adam/v/conv2d_1/kernel:0'
+ 'Adam/m/batch_normalization/gamma:0' 'Adam/v/batch_normalization/gamma:0'
+ 'Adam/m/batch_normalization/beta:0' 'Adam/v/batch_normalization/beta:0'
+ 'Adam/m/conv2d_2/kernel:0' 'Adam/v/conv2d_2/kernel:0'
+ 'Adam/m/conv2d_3/kernel:0' 'Adam/v/conv2d_3/kernel:0'
+ 'Adam/m/batch_normalization_1/gamma:0'
+ 'Adam/v/batch_normalization_1/gamma:0'
+ 'Adam/m/batch_normalization_1/beta:0'
+ 'Adam/v/batch_normalization_1/beta:0' 'Adam/m/conv2d_4/kernel:0'
+ 'Adam/v/conv2d_4/kernel:0' 'Adam/m/batch_normalization_2/gamma:0'
+ 'Adam/v/batch_normalization_2/gamma:0'
+ 'Adam/m/batch_normalization_2/beta:0'
+ 'Adam/v/batch_normalization_2/beta:0' 'Adam/m/conv2d_5/kernel:0'
+ 'Adam/v/conv2d_5/kernel:0' 'Adam/m/batch_normalization_3/gamma:0'
+ 'Adam/v/batch_normalization_3/gamma:0'
+ 'Adam/m/batch_normalization_3/beta:0'
+ 'Adam/v/batch_normalization_3/beta:0' 'Adam/m/conv2d_transpose/kernel:0'
+ 'Adam/v/conv2d_transpose/kernel:0' 'Adam/m/conv2d_transpose_1/kernel:0'
+ 'Adam/v/conv2d_transpose_1/kernel:0' 'Adam/m/conv2d_transpose_2/kernel:0'
+ 'Adam/v/conv2d_transpose_2/kernel:0' 'Adam/m/conv2d_transpose_3/kernel:0'
+ 'Adam/v/conv2d_transpose_3/kernel:0' 'Adam/m/conv2d_transpose_4/kernel:0'
+ 'Adam/v/conv2d_transpose_4/kernel:0' 'Adam/m/conv2d_transpose_5/kernel:0'
+ 'Adam/v/conv2d_transpose_5/kernel:0' 'Adam/m/conv2d_transpose_6/kernel:0'
+ 'Adam/v/conv2d_transpose_6/kernel:0' 'Adam/m/conv2d_transpose_6/bias:0'
+ 'Adam/v/conv2d_transpose_6/bias:0' 'Adam/m/conv2d_transpose_7/kernel:0'
+ 'Adam/v/conv2d_transpose_7/kernel:0' 'Adam/m/conv2d_transpose_7/bias:0'
+ 'Adam/v/conv2d_transpose_7/bias:0']
+
+optimizer_weights/Adam:
+
+optimizer_weights/Adam/m:
+
+optimizer_weights/Adam/m/batch_normalization:
+
+optimizer_weights/Adam/m/batch_normalization/beta:0:
+  Shape: (32,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/batch_normalization/gamma:0:
+  Shape: (32,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/batch_normalization_1:
+
+optimizer_weights/Adam/m/batch_normalization_1/beta:0:
+  Shape: (128,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/batch_normalization_1/gamma:0:
+  Shape: (128,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/batch_normalization_2:
+
+optimizer_weights/Adam/m/batch_normalization_2/beta:0:
+  Shape: (256,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/batch_normalization_2/gamma:0:
+  Shape: (256,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/batch_normalization_3:
+
+optimizer_weights/Adam/m/batch_normalization_3/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/batch_normalization_3/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d:
+
+optimizer_weights/Adam/m/conv2d/kernel:0:
+  Shape: (4, 4, 3, 16)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_1:
+
+optimizer_weights/Adam/m/conv2d_1/kernel:0:
+  Shape: (4, 4, 16, 32)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_2:
+
+optimizer_weights/Adam/m/conv2d_2/kernel:0:
+  Shape: (4, 4, 32, 64)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_3:
+
+optimizer_weights/Adam/m/conv2d_3/kernel:0:
+  Shape: (4, 4, 64, 128)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_4:
+
+optimizer_weights/Adam/m/conv2d_4/kernel:0:
+  Shape: (4, 4, 128, 256)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_5:
+
+optimizer_weights/Adam/m/conv2d_5/kernel:0:
+  Shape: (4, 4, 256, 512)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose:
+
+optimizer_weights/Adam/m/conv2d_transpose/kernel:0:
+  Shape: (4, 4, 512, 512)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_1:
+
+optimizer_weights/Adam/m/conv2d_transpose_1/kernel:0:
+  Shape: (4, 4, 256, 512)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_2:
+
+optimizer_weights/Adam/m/conv2d_transpose_2/kernel:0:
+  Shape: (4, 4, 128, 256)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_3:
+
+optimizer_weights/Adam/m/conv2d_transpose_3/kernel:0:
+  Shape: (4, 4, 64, 128)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_4:
+
+optimizer_weights/Adam/m/conv2d_transpose_4/kernel:0:
+  Shape: (4, 4, 32, 64)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_5:
+
+optimizer_weights/Adam/m/conv2d_transpose_5/kernel:0:
+  Shape: (4, 4, 16, 32)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_6:
+
+optimizer_weights/Adam/m/conv2d_transpose_6/bias:0:
+  Shape: (8,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_6/kernel:0:
+  Shape: (2, 2, 8, 16)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_7:
+
+optimizer_weights/Adam/m/conv2d_transpose_7/bias:0:
+  Shape: (3,)
+  Dtype: float32
+
+optimizer_weights/Adam/m/conv2d_transpose_7/kernel:0:
+  Shape: (2, 2, 3, 8)
+  Dtype: float32
+
+optimizer_weights/Adam/v:
+
+optimizer_weights/Adam/v/batch_normalization:
+
+optimizer_weights/Adam/v/batch_normalization/beta:0:
+  Shape: (32,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/batch_normalization/gamma:0:
+  Shape: (32,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/batch_normalization_1:
+
+optimizer_weights/Adam/v/batch_normalization_1/beta:0:
+  Shape: (128,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/batch_normalization_1/gamma:0:
+  Shape: (128,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/batch_normalization_2:
+
+optimizer_weights/Adam/v/batch_normalization_2/beta:0:
+  Shape: (256,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/batch_normalization_2/gamma:0:
+  Shape: (256,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/batch_normalization_3:
+
+optimizer_weights/Adam/v/batch_normalization_3/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/batch_normalization_3/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d:
+
+optimizer_weights/Adam/v/conv2d/kernel:0:
+  Shape: (4, 4, 3, 16)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_1:
+
+optimizer_weights/Adam/v/conv2d_1/kernel:0:
+  Shape: (4, 4, 16, 32)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_2:
+
+optimizer_weights/Adam/v/conv2d_2/kernel:0:
+  Shape: (4, 4, 32, 64)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_3:
+
+optimizer_weights/Adam/v/conv2d_3/kernel:0:
+  Shape: (4, 4, 64, 128)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_4:
+
+optimizer_weights/Adam/v/conv2d_4/kernel:0:
+  Shape: (4, 4, 128, 256)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_5:
+
+optimizer_weights/Adam/v/conv2d_5/kernel:0:
+  Shape: (4, 4, 256, 512)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose:
+
+optimizer_weights/Adam/v/conv2d_transpose/kernel:0:
+  Shape: (4, 4, 512, 512)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_1:
+
+optimizer_weights/Adam/v/conv2d_transpose_1/kernel:0:
+  Shape: (4, 4, 256, 512)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_2:
+
+optimizer_weights/Adam/v/conv2d_transpose_2/kernel:0:
+  Shape: (4, 4, 128, 256)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_3:
+
+optimizer_weights/Adam/v/conv2d_transpose_3/kernel:0:
+  Shape: (4, 4, 64, 128)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_4:
+
+optimizer_weights/Adam/v/conv2d_transpose_4/kernel:0:
+  Shape: (4, 4, 32, 64)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_5:
+
+optimizer_weights/Adam/v/conv2d_transpose_5/kernel:0:
+  Shape: (4, 4, 16, 32)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_6:
+
+optimizer_weights/Adam/v/conv2d_transpose_6/bias:0:
+  Shape: (8,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_6/kernel:0:
+  Shape: (2, 2, 8, 16)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_7:
+
+optimizer_weights/Adam/v/conv2d_transpose_7/bias:0:
+  Shape: (3,)
+  Dtype: float32
+
+optimizer_weights/Adam/v/conv2d_transpose_7/kernel:0:
+  Shape: (2, 2, 3, 8)
+  Dtype: float32
+
+optimizer_weights/iteration:0:
+  Shape: ()
+  Dtype: int64
+
+=== ANALYSIS COMPLETE ===
