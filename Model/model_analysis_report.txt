@@ -1,0 +1,481 @@
+Model Analysis Report
+Generated on: 2025-03-25 07:03:03
+Model file: model_epoch_50.h5
+================================================================================
+
+=== MODEL SUMMARY ===
+
+Failed to load model with Keras: Error when deserializing class 'Conv2DTranspose' using config={'name': 'conv2d_transpose_1', 'trainable': True, 'dtype': 'float32', 'filters': 512, 'kernel_size': [4, 4], 'strides': [2, 2], 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': [1, 1], 'groups': 1, 'activation': 'linear', 'use_bias': False, 'kernel_initializer': {'class_name': 'RandomNormal', 'config': {'mean': 0.0, 'stddev': 0.02, 'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None, 'output_padding': None}.
+
+Exception encountered: Unrecognized keyword arguments passed to Conv2DTranspose: {'groups': 1}
+Falling back to direct H5 file analysis...
+
+
+=== H5 FILE STRUCTURE ===
+
+model_weights:
+  backend: tensorflow
+  keras_version: 2.10.0
+  layer_names: ['input_1' 'sequential_2' 'sequential_3' 'sequential_4' 'sequential_5'
+ 'sequential_6' 'sequential_7' 'sequential_8' 'sequential_9'
+ 'sequential_10' 'concatenate' 'sequential_11' 'concatenate_1'
+ 'sequential_12' 'concatenate_2' 'sequential_13' 'concatenate_3'
+ 'sequential_14' 'concatenate_4' 'sequential_15' 'concatenate_5'
+ 'sequential_16' 'concatenate_6' 'conv2d_transpose_8']
+
+model_weights/concatenate:
+  weight_names: []
+
+model_weights/concatenate_1:
+  weight_names: []
+
+model_weights/concatenate_2:
+  weight_names: []
+
+model_weights/concatenate_3:
+  weight_names: []
+
+model_weights/concatenate_4:
+  weight_names: []
+
+model_weights/concatenate_5:
+  weight_names: []
+
+model_weights/concatenate_6:
+  weight_names: []
+
+model_weights/conv2d_transpose_8:
+  weight_names: ['conv2d_transpose_8/kernel:0' 'conv2d_transpose_8/bias:0']
+
+model_weights/conv2d_transpose_8/conv2d_transpose_8:
+
+model_weights/conv2d_transpose_8/conv2d_transpose_8/bias:0:
+  Shape: (3,)
+  Dtype: float32
+
+model_weights/conv2d_transpose_8/conv2d_transpose_8/kernel:0:
+  Shape: (4, 4, 3, 128)
+  Dtype: float32
+
+model_weights/input_1:
+  weight_names: []
+
+model_weights/sequential_10:
+  weight_names: ['conv2d_transpose_1/kernel:0' 'batch_normalization_9/gamma:0'
+ 'batch_normalization_9/beta:0' 'batch_normalization_9/moving_mean:0'
+ 'batch_normalization_9/moving_variance:0']
+
+model_weights/sequential_10/batch_normalization_9:
+
+model_weights/sequential_10/batch_normalization_9/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_10/batch_normalization_9/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_10/batch_normalization_9/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_10/batch_normalization_9/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_10/conv2d_transpose_1:
+
+model_weights/sequential_10/conv2d_transpose_1/kernel:0:
+  Shape: (4, 4, 512, 512)
+  Dtype: float32
+
+model_weights/sequential_11:
+  weight_names: ['conv2d_transpose_2/kernel:0' 'batch_normalization_10/gamma:0'
+ 'batch_normalization_10/beta:0' 'batch_normalization_10/moving_mean:0'
+ 'batch_normalization_10/moving_variance:0']
+
+model_weights/sequential_11/batch_normalization_10:
+
+model_weights/sequential_11/batch_normalization_10/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_11/batch_normalization_10/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_11/batch_normalization_10/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_11/batch_normalization_10/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_11/conv2d_transpose_2:
+
+model_weights/sequential_11/conv2d_transpose_2/kernel:0:
+  Shape: (4, 4, 512, 1024)
+  Dtype: float32
+
+model_weights/sequential_12:
+  weight_names: ['conv2d_transpose_3/kernel:0' 'batch_normalization_11/gamma:0'
+ 'batch_normalization_11/beta:0' 'batch_normalization_11/moving_mean:0'
+ 'batch_normalization_11/moving_variance:0']
+
+model_weights/sequential_12/batch_normalization_11:
+
+model_weights/sequential_12/batch_normalization_11/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_12/batch_normalization_11/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_12/batch_normalization_11/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_12/batch_normalization_11/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_12/conv2d_transpose_3:
+
+model_weights/sequential_12/conv2d_transpose_3/kernel:0:
+  Shape: (4, 4, 512, 1024)
+  Dtype: float32
+
+model_weights/sequential_13:
+  weight_names: ['conv2d_transpose_4/kernel:0' 'batch_normalization_12/gamma:0'
+ 'batch_normalization_12/beta:0' 'batch_normalization_12/moving_mean:0'
+ 'batch_normalization_12/moving_variance:0']
+
+model_weights/sequential_13/batch_normalization_12:
+
+model_weights/sequential_13/batch_normalization_12/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_13/batch_normalization_12/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_13/batch_normalization_12/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_13/batch_normalization_12/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_13/conv2d_transpose_4:
+
+model_weights/sequential_13/conv2d_transpose_4/kernel:0:
+  Shape: (4, 4, 512, 1024)
+  Dtype: float32
+
+model_weights/sequential_14:
+  weight_names: ['conv2d_transpose_5/kernel:0' 'batch_normalization_13/gamma:0'
+ 'batch_normalization_13/beta:0' 'batch_normalization_13/moving_mean:0'
+ 'batch_normalization_13/moving_variance:0']
+
+model_weights/sequential_14/batch_normalization_13:
+
+model_weights/sequential_14/batch_normalization_13/beta:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_14/batch_normalization_13/gamma:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_14/batch_normalization_13/moving_mean:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_14/batch_normalization_13/moving_variance:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_14/conv2d_transpose_5:
+
+model_weights/sequential_14/conv2d_transpose_5/kernel:0:
+  Shape: (4, 4, 256, 1024)
+  Dtype: float32
+
+model_weights/sequential_15:
+  weight_names: ['conv2d_transpose_6/kernel:0' 'batch_normalization_14/gamma:0'
+ 'batch_normalization_14/beta:0' 'batch_normalization_14/moving_mean:0'
+ 'batch_normalization_14/moving_variance:0']
+
+model_weights/sequential_15/batch_normalization_14:
+
+model_weights/sequential_15/batch_normalization_14/beta:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_15/batch_normalization_14/gamma:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_15/batch_normalization_14/moving_mean:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_15/batch_normalization_14/moving_variance:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_15/conv2d_transpose_6:
+
+model_weights/sequential_15/conv2d_transpose_6/kernel:0:
+  Shape: (4, 4, 128, 512)
+  Dtype: float32
+
+model_weights/sequential_16:
+  weight_names: ['conv2d_transpose_7/kernel:0' 'batch_normalization_15/gamma:0'
+ 'batch_normalization_15/beta:0' 'batch_normalization_15/moving_mean:0'
+ 'batch_normalization_15/moving_variance:0']
+
+model_weights/sequential_16/batch_normalization_15:
+
+model_weights/sequential_16/batch_normalization_15/beta:0:
+  Shape: (64,)
+  Dtype: float32
+
+model_weights/sequential_16/batch_normalization_15/gamma:0:
+  Shape: (64,)
+  Dtype: float32
+
+model_weights/sequential_16/batch_normalization_15/moving_mean:0:
+  Shape: (64,)
+  Dtype: float32
+
+model_weights/sequential_16/batch_normalization_15/moving_variance:0:
+  Shape: (64,)
+  Dtype: float32
+
+model_weights/sequential_16/conv2d_transpose_7:
+
+model_weights/sequential_16/conv2d_transpose_7/kernel:0:
+  Shape: (4, 4, 64, 256)
+  Dtype: float32
+
+model_weights/sequential_2:
+  weight_names: ['conv2d_1/kernel:0']
+
+model_weights/sequential_2/conv2d_1:
+
+model_weights/sequential_2/conv2d_1/kernel:0:
+  Shape: (4, 4, 3, 64)
+  Dtype: float32
+
+model_weights/sequential_3:
+  weight_names: ['conv2d_2/kernel:0' 'batch_normalization_2/gamma:0'
+ 'batch_normalization_2/beta:0' 'batch_normalization_2/moving_mean:0'
+ 'batch_normalization_2/moving_variance:0']
+
+model_weights/sequential_3/batch_normalization_2:
+
+model_weights/sequential_3/batch_normalization_2/beta:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_3/batch_normalization_2/gamma:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_3/batch_normalization_2/moving_mean:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_3/batch_normalization_2/moving_variance:0:
+  Shape: (128,)
+  Dtype: float32
+
+model_weights/sequential_3/conv2d_2:
+
+model_weights/sequential_3/conv2d_2/kernel:0:
+  Shape: (4, 4, 64, 128)
+  Dtype: float32
+
+model_weights/sequential_4:
+  weight_names: ['conv2d_3/kernel:0' 'batch_normalization_3/gamma:0'
+ 'batch_normalization_3/beta:0' 'batch_normalization_3/moving_mean:0'
+ 'batch_normalization_3/moving_variance:0']
+
+model_weights/sequential_4/batch_normalization_3:
+
+model_weights/sequential_4/batch_normalization_3/beta:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_4/batch_normalization_3/gamma:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_4/batch_normalization_3/moving_mean:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_4/batch_normalization_3/moving_variance:0:
+  Shape: (256,)
+  Dtype: float32
+
+model_weights/sequential_4/conv2d_3:
+
+model_weights/sequential_4/conv2d_3/kernel:0:
+  Shape: (4, 4, 128, 256)
+  Dtype: float32
+
+model_weights/sequential_5:
+  weight_names: ['conv2d_4/kernel:0' 'batch_normalization_4/gamma:0'
+ 'batch_normalization_4/beta:0' 'batch_normalization_4/moving_mean:0'
+ 'batch_normalization_4/moving_variance:0']
+
+model_weights/sequential_5/batch_normalization_4:
+
+model_weights/sequential_5/batch_normalization_4/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_5/batch_normalization_4/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_5/batch_normalization_4/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_5/batch_normalization_4/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_5/conv2d_4:
+
+model_weights/sequential_5/conv2d_4/kernel:0:
+  Shape: (4, 4, 256, 512)
+  Dtype: float32
+
+model_weights/sequential_6:
+  weight_names: ['conv2d_5/kernel:0' 'batch_normalization_5/gamma:0'
+ 'batch_normalization_5/beta:0' 'batch_normalization_5/moving_mean:0'
+ 'batch_normalization_5/moving_variance:0']
+
+model_weights/sequential_6/batch_normalization_5:
+
+model_weights/sequential_6/batch_normalization_5/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_6/batch_normalization_5/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_6/batch_normalization_5/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_6/batch_normalization_5/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_6/conv2d_5:
+
+model_weights/sequential_6/conv2d_5/kernel:0:
+  Shape: (4, 4, 512, 512)
+  Dtype: float32
+
+model_weights/sequential_7:
+  weight_names: ['conv2d_6/kernel:0' 'batch_normalization_6/gamma:0'
+ 'batch_normalization_6/beta:0' 'batch_normalization_6/moving_mean:0'
+ 'batch_normalization_6/moving_variance:0']
+
+model_weights/sequential_7/batch_normalization_6:
+
+model_weights/sequential_7/batch_normalization_6/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_7/batch_normalization_6/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_7/batch_normalization_6/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_7/batch_normalization_6/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_7/conv2d_6:
+
+model_weights/sequential_7/conv2d_6/kernel:0:
+  Shape: (4, 4, 512, 512)
+  Dtype: float32
+
+model_weights/sequential_8:
+  weight_names: ['conv2d_7/kernel:0' 'batch_normalization_7/gamma:0'
+ 'batch_normalization_7/beta:0' 'batch_normalization_7/moving_mean:0'
+ 'batch_normalization_7/moving_variance:0']
+
+model_weights/sequential_8/batch_normalization_7:
+
+model_weights/sequential_8/batch_normalization_7/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_8/batch_normalization_7/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_8/batch_normalization_7/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_8/batch_normalization_7/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_8/conv2d_7:
+
+model_weights/sequential_8/conv2d_7/kernel:0:
+  Shape: (4, 4, 512, 512)
+  Dtype: float32
+
+model_weights/sequential_9:
+  weight_names: ['conv2d_8/kernel:0' 'batch_normalization_8/gamma:0'
+ 'batch_normalization_8/beta:0' 'batch_normalization_8/moving_mean:0'
+ 'batch_normalization_8/moving_variance:0']
+
+model_weights/sequential_9/batch_normalization_8:
+
+model_weights/sequential_9/batch_normalization_8/beta:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_9/batch_normalization_8/gamma:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_9/batch_normalization_8/moving_mean:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_9/batch_normalization_8/moving_variance:0:
+  Shape: (512,)
+  Dtype: float32
+
+model_weights/sequential_9/conv2d_8:
+
+model_weights/sequential_9/conv2d_8/kernel:0:
+  Shape: (4, 4, 512, 512)
+  Dtype: float32
+
+model_weights/top_level_model_weights:
+  weight_names: []
+
+=== ANALYSIS COMPLETE ===

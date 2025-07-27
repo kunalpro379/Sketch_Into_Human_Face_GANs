@@ -9,7 +9,7 @@ DataPreprocessing/preprocessed_data/
 Data/Humans/
 Data/archive.zip
 archive.zip
-
+ignore/
 # Image folders and files
 *.jpg
 *.jpeg
